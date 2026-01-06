@@ -1,0 +1,22 @@
+arr = [1, 2, nil, 3, 3, nil, 2]
+nested = [1, [2, [3, 4]], 5]
+
+puts "Original: #{arr}"
+puts "Compact: #{arr.compact}"
+puts "Uniq: #{arr.compact.uniq}"
+puts "Sort: #{arr.compact.sort}"
+puts "Reverse: #{arr.compact.reverse}"
+puts "Take(3): #{arr.compact.take(3)}"
+puts "Drop(2): #{arr.compact.drop(2)}"
+puts "Flatten: #{nested.flatten}"
+puts "Rotate(2): #{[1,2,3,4,5].rotate(2)}"
+puts "Shuffle: #{[1,2,3,4,5].shuffle}"
+puts "Sample(2): #{[1,2,3,4,5].sample(2)}"
+puts "Push/Pop: #{[1,2].push(3).tap { |a| a.pop }}"
+puts "Shift/Unshift: #{[1,2,3].tap { |a| a.shift; a.unshift(0) }}"
+puts "Combination: #{[1,2,3].combination(2).to_a}"
+puts "Permutation: #{[1,2,3].permutation(2).to_a}"
+puts "Product: #{[1,2].product([3,4])}"
+puts "Intersection: #{[1,2,3] & [2,3,4]}"
+puts "Union: #{[1,2,3] | [3,4,5]}"
+puts "Difference: #{[1,2,3,4] - [2,4]}"
